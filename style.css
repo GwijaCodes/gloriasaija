@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8vh;
+}
+
+body {
+    background-color: #353535;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li{
+    list-style: none;
+}
+
+
+body::-webkit-scrollbar{
+    background-color: #353535;
+}
+
+body::-webkit-scrollbar-thumb{
+ background-color: #151515;
+ transition: all 300ms ease;
+}
+
+body::-webkit-scrollbar-thumb:active,
+body::-webkit-scrollbar-thumb:hover{
+    background-color: #1e1e1e;
+   }
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4vh 10vw;
+    width: 100vw;
+    height: fit-content;
+    color: #FFD02A;
+    transition: padding .3s;
+}
+
+nav h3{
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.navigation ul{
+    display: flex;
+    gap: 30px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.navigation li{
+    position: relative;
+    transition: .4s ease;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.navigation li:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    background-color: #FFD02A;
+    transition: width .3s;
+}
+
+.navigation li:hover:after{
+    width: 100%;
+}
+
+.sticky{
+    background-color: #353535;
+    padding: 2vh 10vw;
+    color: #d9d9d9;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Lexend Deca';
+}
+
+.intro{
+    color: #fff;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.pic{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 4px;
+    background: linear-gradient(#00000056, #00000061),
+    url("./imgs/IMG_5585.jpg");
+    filter:grayscale(100) ;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.greet{
+    margin-left: 30%;
+    transition: all 2s ease;
+}
+
+.greet p{
+    border-left: #FFD02A 4px solid;
+    padding-left: 30px;
+    max-width: 300px;
+    margin-top: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+
+.icons{
+    padding-left: 35px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons img{
+    fill: #fff;
+    transition: all 200ms;
+}
+
+.icons img:hover{
+    transform: translateY(-4px);
+    filter: sepia(100%) saturate(40) brightness(1) hue-rotate(-30deg);
+    cursor: pointer;
+}
+
+main{
+    max-width: 65vw;
+    margin: auto;
+}
+
+.about-me {
+    color: #d9d9d9;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.about-me-container {
+    max-width: 30vw;
+    margin: auto;
+    margin-top: 10vh;
+    padding-top: 50px;
+}
+
+.about-me-container p{
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.about-me h2{
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+button{
+    background-color: #353535;
+    color: #d9d9d9;
+    border: none;
+    font-size: 14px;
+    padding: 15px;
+    border-radius: 40px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.about-me button {
+    background-color: #FFD02A;
+    color: #353535;
+    font-weight: 600;
+    letter-spacing: 1px;
+    box-shadow: 10px 5px 10px 2px #00000072;
+}
+
+.skillset{
+    width: 80%;
+    height: fit-content;
+    margin: 80px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skill{
+    padding: 20px;
+    font-size: 12px;
+    width: 230px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFD02A;
+    text-align: start;
+}
+
+.skill p {
+    font-size: 10px;
+}
+
+.skill img{
+    width: 50px;
+    height: 50px;
+}
+
+.projects{
+    max-width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.projects h2{
+    color: #d9d9d9;
+    font-size: 32px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.project-carousel{
+    width: 100%;
+    min-height: 70vh;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 330px);
+    margin: 30px auto;
+}
+
+.full-card{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.description {
+    color: #d9d9d9;
+    font-size: 12px;
+    margin-top: 15px;
+}
+
+.maincontainer{
+   position: relative;
+   width: 25vw;
+   aspect-ratio: 1/1;
+   background-color: transparent;
+}
+
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.maincontainer:hover .card{
+    transform: perspective(500px) rotateY(180deg);
+}
+
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.justmemes-project{
+    background:
+    linear-gradient(#00000000 50%, #00000061),
+    url('imgs/splash0001.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.spazza-project{
+    background:
+    linear-gradient(#00000000 50%, #00000061),
+    url('imgs/spazza.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: #1e1e1e;
+    background-color: #FFD02A;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.back p{
+    width: 70%;
+    font-weight: 300;
+    font-size: 12px;
+}
+
+#playGame{
+    font-size: 45px;
+    color: #d9d9d9;
+    cursor: pointer;
+}
+
+footer{
+    height: 50vh;
+    padding: 10vw;
+    background-color: #252525;
+    color: #d9d9d9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
+    font-weight: bold;
+}
+
+@media (max-width: 500px){
+    h1{
+        font-size: 40px;
+    }
+
+    .greet{
+        margin: auto;
+    }
+
+    .about-me {
+        max-width: 90vw;
+        margin: 10vh auto;
+    }
+
+    .project-carousel{
+        flex-direction: column;
+    }
+
+}

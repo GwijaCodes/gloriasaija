@@ -1,0 +1,82 @@
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 900px){
+    .game{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+}
+
+.board{
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.board i{
+    font-size: 30px;
+    font-weight: bolder;
+    color: #252525;
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.player{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-color: #ffea2a;
+    top: 70px;
+}
+
+.block{
+    width: 30px;
+    height: 40px;
+    position: relative;
+    background-color: #d9d9d9;
+    left: 80%;
+    top: 30px;
+}
+
+.block-move{
+    animation: block 2s infinite linear;
+}
+
+.jump{
+    animation: jump 0.6s infinite;
+}
+
+@keyframes jump {
+    0%{
+        top: 70px;
+    }
+    30%{
+        top: 10px;
+    }
+    70%{
+        top: 8px;
+        rotate: 360deg;
+    }
+    100%{
+        top: 70px;
+    }
+}
+
+@keyframes block {
+    0%{
+        left: 100%;
+    }
+    100%{
+        left: -10%;
+    }
+}
