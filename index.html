@@ -21,11 +21,13 @@
             </div>
         </nav>
         <script>
+            //trasforma nav
             window.addEventListener('scroll', function(){
                 const nav = document.querySelector('nav');
                 nav.classList.toggle('sticky', window.scrollY > 0);
             })
 
+            //salta navigazione
             const aboutmeScroll = document.querySelector('#aboutme');
             aboutmeScroll.addEventListener('click', function(){
                 document.querySelector('.about-me').scrollIntoView({
@@ -67,6 +69,7 @@
 
         <main>
         <div class="about-me">
+            <img class="dance" src="./imgs/ezgif-5-04162044e7.gif" alt="">
             <div class="about-me-container">
                 <h2>About me</h2>
             <p>Vivo ad Acireale,
@@ -77,50 +80,7 @@
                 <a href="imgs/Curriculum_GloriaSaija.pdf" download>
                     <button>curriculum.pdf</button></a>
             
-            </div>
-            <div class="skillset">
-                <h2>Skills</h2>
-                <div class="skillset-container">
-                    <section class="skill">
-                    <img src="imgs/web.png" alt="">
-                    <section class="skillText">
-                        <h4>HTML/CSS/Javascript</h4>
-                    <p>Oltre a librerie come Three.js!</p>
-                    </section>
-                      
-                </section>
-                <section class="skill">
-                    <img src="imgs/web.png" alt="">
-                    <section class="skillText">
-                        <h4>Sviluppo PWA</h4>
-                    </section>
-                    
-                </section>
-                <section class="skill">
-                    <img src="imgs/web.png" alt="">
-                    <section class="skillText">
-                        <h4>Videomaking</h4>
-                    </section>
-                    
-                </section>
-                <section class="skill">
-                    <img src="imgs/web.png" alt="">
-                    <section class="skillText">
-                        <h4>Modellazione 3D</h4>
-                    <p>Con spiccata conoscenza di Blender</p>
-                    </section>
-                    
-                </section>
-                <section class="skill">
-                    <img src="imgs/web.png" alt="">
-                    <section class="skillText">
-                        <h4>Problem solving</h4>
-                    <p>Occhi aperti, inventiva e una buona dose di ricerche Google</p>
-                    </section>
-                </section>
-                </div>
-                
-            </div>  
+            </div> 
             </div>
             
         </div>
@@ -157,7 +117,7 @@
                             <div class="back">
                                 <p><b>Spazza</b> è un'applicazione web con lo scopo di tenerti sempre aggiornato sulla raccolta differenziata... nel minor numero di tap possibile.
                                 </p>
-                                <a href="./spazza-landing-page/index.html"><button>Vedi il progetto</button></a>
+                                <a href="https://gwijacodes.github.io/spazza2.0/"><button>Vai al progetto</button></a>
                                 
                             </div>
                         </div> 

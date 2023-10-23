@@ -56,7 +56,7 @@ nav{
 }
 
 nav h3{
-    font-weight: 200;
+    font-weight: 800;
     font-size: 12px;
 }
 
@@ -92,6 +92,7 @@ nav h3{
 .sticky{
     background-color: #353535;
     padding: 2vh 10vw;
+    padding-top: 1vh;
     color: #d9d9d9;
 }
 
@@ -162,28 +163,36 @@ h1{
 main{
     max-width: 75vw;
     margin: auto;
+    margin-top: 4vh;
 }
 
 .about-me {
     color: #d9d9d9;
     min-height: 100vh;
-    width: 100%;
-    margin-top: 30px;
+    max-width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fill, 400px);
+    margin: auto;
 }
 
-.about-me-container,
-.skillset {
-    margin-top: 10vh;
-    padding: 30px 65px 70px;
+.about-me .dance{
+    max-width: 280px;
+    max-height: 360px;
+    border: 2px solid #FFD02A;
+    box-shadow: -10px 10px #FFD02A;
+}
+
+.about-me-container{
+    padding-left: 60px;
+
 }
 
 .about-me-container p{
     line-height: 25px;
-    font-size: 16px;
-    width: 80%;
+    font-size: clamp(0.8rem, 2.5vw, 1rem); 
+    text-align: justify;
 }
 
 .about-me h2{
@@ -192,53 +201,24 @@ main{
 }
 
 button{
-    background-color: #353535;
-    color: #d9d9d9;
-    border: none;
+    background-color: transparent;
+    border: 2px solid #252525;
+    color: #252525;
     font-size: 14px;
+    font-weight: 500;
     padding: 15px;
-    border-radius: 40px;
+    border-radius: 4px;
     margin-top: 30px;
     cursor: pointer;
 }
 
 .about-me button {
+    border: none;
     background-color: #FFD02A;
     color: #353535;
     font-weight: 600;
     letter-spacing: 1px;
     box-shadow: 10px 5px 10px 2px #00000072;
-}
-
-.skillset {
-    background-color: #1e1e1e;
-    border-radius: 4px;
-    height: fit-content;
-    width: fit-content;
-}
-
-.skillset-container{
-    max-width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-
-.skill{
-    font-size: 10px;
-    width: 160px;
-    display: flex;
-    gap: 10px;
-    color: #d9d9d9;
-}
-
-.skill p {
-    font-size: 10px;
-}
-
-.skill img{
-    width: 40px;
-    height: 40px;
 }
 
 .projects{
@@ -264,6 +244,7 @@ button{
     justify-content: space-between;
     grid-template-columns: repeat(auto-fill, 330px);
     margin: 30px auto;
+    gap: 4vh;
 }
 
 .full-card{
@@ -280,7 +261,7 @@ button{
 
 .maincontainer{
    position: relative;
-   width: 25vmax;
+   width: 100%;
    aspect-ratio: 1/1;
    background-color: transparent;
 }
@@ -339,7 +320,7 @@ button{
 .back p{
     width: 70%;
     font-weight: 300;
-    font-size: .6rem;
+    font-size: .8em;
 }
 
 #playGame{
@@ -360,31 +341,55 @@ footer{
     font-weight: bold;
 }
 
+
+
 @media (max-width: 1000px){
+    nav {
+       flex-direction: column; 
+       gap: 20px;
+    }
+
+    .navigation ul{
+        width: 100vw;
+        justify-content: space-evenly;
+    }
+
     h1{
         font-size: 40px;
     }
+    .greet{
+            margin: auto;
+        }
 
     main{
-        max-width: 90vw;
-    }
-
-    .greet{
-        margin: auto;
-    }
-
-    .about-me, .skillset-container {
+        max-width: 50vw;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 8vh;
     }
 
-    .about-me-container p{
-        width: 100%;
+    .projects {
+        width: 100vw;
+        margin: 0;
     }
 
     .project-carousel{
-        flex-direction: column;
+        min-width: max-content;
+        gap: 6vh;
+        display: block;
+    }
+
+    .full-card{
+        max-width: 100%;
+        margin-bottom: 4vh;
+    }
+
+}
+
+@media (max-width: 600px){
+    main{
+        max-width: 90vw;
     }
 
 }
