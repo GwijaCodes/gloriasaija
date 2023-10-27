@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.cdnfonts.com/css/lexend-deca" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SPAZZA</title>
+</head>
+<body>
+    <nav>
+        <h3><a href="../index.html">gloriasaija</a></h3>
+        <div class="icons">
+            <a href="mailto:gloriasaija2000@gmail.com">
+            <img src="./images/email.svg" fill="currentColor" style="width: 25px;" alt="">
+            </a>
+            <a href="https://www.linkedin.com/in/gloria-saija-a3816b217">
+            <img src="./images/linkedin.svg" style="width: 20px;" alt="">
+            </a>
+            <a href="https://github.com/GwijaCodes">
+            <img src="./images/github.svg" fill="currentColor" style="width: 22px;" alt="">
+            </a>
+        </div>
+    </nav>
+    <main>
+        <div class="text">
+            <h1><span style="color: #1F5E11;">SPAZZA</span>, UN AIUTO <br>
+                PER STARE AL PASSO <br>
+                CON LA DIFFERENZIATA</h1>
+            <p>Non avrai più scuse: ogni <br>
+                giorno la differenziata sarà più chiara <br>
+                che mai</p>
+                <a href="https://gwijacodes.github.io/spazza2.0/">
+                    <button class="scarica">Scarica la PWA</button></a>
+            
+        </div>
+        <div class="phone-container">
+            <img class="phone" src="images/phones.png" alt="">
+        </div>
+    </main>
+    <div class="features">
+        <h2>A CHE SERVE SPAZZA?</h2>
+            <div class="features-container">
+            <div class="feature">
+                <h3>Oggi</h3>
+                <p>Apri l'app e scopri subito quale bidone dovrai uscire di casa.</p>
+            </div>
+            <div class="feature">
+                <h3>Domani</h3>
+                <p>Sai gia quale bidone dovrai preparare... senza neanche sapere che giorno è! Puoi anche consultare il calendario a icone.</p>
+            </div>
+            <div class="feature">
+                <h3>E poi?</h3>
+                <p>Trovi quando vuoi una comoda lista per chiarire ogni dubbio su cosa conferire in ciascun bidone.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <button class="scarica">Scarica la PWA</button>
+    </footer>
+
+    <script>
+        let phone = document.querySelector('.title-spazza');
+        let shadow = '';
+
+        for(let i = 0; i < 500; i++){
+            shadow += (shadow? ',':'')+ i+'px '+ i+'px 0 #ffffff';
+        }
+        //phone.style.textShadow = shadow;
+    </script>
+</body>
+</html>
