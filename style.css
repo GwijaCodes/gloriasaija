@@ -178,7 +178,7 @@ h1{
 .about-me {
     background-color: var(--scurissimo);
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .about-me-container{
