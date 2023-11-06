@@ -50,7 +50,6 @@
             <div class="pic"></div>
             <div class="greet">
                 <h1>Come va?</h1>
-                <section class="line"></section>
                 <p>Mi chiamo <b>Gloria Saija</b>, sono una <br> front-end developer e 3D artist.
                   <div class="icons">
                     <a href="mailto:gloriasaija2000@gmail.com">
@@ -69,78 +68,101 @@
         </div>
 
         <main>
+            
         <div class="about-me">
             <div class="about-me-container">
-            <div class="about-me-text">
-                <h2>About me</h2>
-                <p>Vivo ad Acireale,
-                    ho studiato Arti teconologiche presso l’<i><a href="abacatania.it">Accademia di Belle Arti di Catania</a></i>
-                    .
-                    Grazie allo studio, sia accademico che indipendente, ho acquisito diverse skill fondamentali per quello che amo fare.
-                    Più giù troverai qualche mio lavoro</p>
+                <div class="about-me-text">
+                    <h2>About me</h2>
+                    <p>Vivo ad Acireale,
+                        ho studiato Arti teconologiche presso l’<i><a href="abacatania.it">Accademia di Belle Arti di Catania</a></i>
+                        .
+                        Grazie allo studio, sia accademico che indipendente, ho acquisito diverse skill fondamentali per quello che amo fare.
+                        Più giù troverai qualche mio lavoro</p>
                     <a href="imgs/Curriculum_GloriaSaija.pdf" download>
                         <button>Curriculum.pdf
                             <img src="imgs/download.svg" alt="">
-                        </button></a>
-            </div>
+                        </button>
+                    </a>
+                </div>
             <div class="dance">
                 <img src="./imgs/legif.gif" alt="">
             </div>
-        </div>
         </div> 
+        <div class="game">
+            <div class="board" onmouseover="gameOn()" onmouseout="gameOff()">
+                <div class="player">
+                    <img id="rat" src="imgs/ratrun.gif" alt="">
+                </div>
+                <div class="block"></div>
+            </div>
+        </div>
         </div>
         <div class="projects">
             <h2>Progetti</h2>         
             <div class="project-carousel">
                
-               <div class="project-card">
-                <img class="card-img" src="imgs/spazza.jpg" alt="">
-                <section class="description">
-                                <h4>SPAZZA</h4>
-                                <p>Progetto personale | PWA</p>
-                                <br>
-                                <p class="project-description">Just Memes è un videogioco bla bla bla blabla ao;ejf;ao jfwaof. OUhawoiudh ahdiahd slidfj sefk aks iaw e! alsfdj. Just Memes è un videogioco bla bla bla blabla ao;ejf;ao jfwaof. OUhawoiudh ahdiahd slidfj sefk aks iaw e! alsfdj. Just Memes è un videogioco bla. 
-                                </p>
-                                <button>Vai al progetto 
-                                    <img src="imgs/Vector.svg" alt=""></button>
-                    </section>
-               </div>
-                <div class="project-card">
-                                <img class="card-img" src="imgs/splash0001.png" alt="">
-                                <section class="description">
-                                                <h4>JUST MEMES</h4>
-                                                <p>Progetto di tesi | DEMO videogioco</p>
-                                                <br>
-                                                <p class="project-description">Just Memes è un videogioco bla bla bla blabla ao;ejf;ao jfwaof. OUhawoiudh ahdiahd slidfj sefk aks iaw e! alsfdj. Just Memes è un videogioco bla bla bla blabla ao;ejf;ao jfwaof. OUhawoiudh ahdiahd slidfj sefk aks iaw e! alsfdj. Just Memes è un videogioco bla. 
-                                                </p>
-                                                <button>Vai al progetto 
-                                                    <img src="imgs/Vector.svg" alt=""></button>
-                                    </section>
-                            </div>
-               <div class="project-card">
-                <img class="card-img" src="imgs/splash0001.png" alt="">
-                <section class="description">
-                                <h4>JUST MEMES</h4>
-                                <p>Progetto di tesi | DEMO videogioco</p>
-                                <br>
-                                <p class="project-description">Just Memes è un videogioco bla bla bla blabla ao;ejf;ao jfwaof. OUhawoiudh ahdiahd slidfj sefk aks iaw e! alsfdj. Just Memes è un videogioco bla bla bla blabla ao;ejf;ao jfwaof. OUhawoiudh ahdiahd slidfj sefk aks iaw e! alsfdj. Just Memes è un videogioco bla. 
-                                </p>
-                                <button>Vai al progetto 
-                                    <img src="imgs/Vector.svg" alt=""></button>
-                    </section>
-               </div>
-               
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Just Memes è un videogioco bla bla bla blabla ao;ejf;ao jfwaof. OUhawoiudh ahdiahd slidfj sefk aks iaw e! alsfdj. 
+                        </p>
+                        <a href="">
+                            Vai al progetto
+                            <img src="./imgs/Vector.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <p class="description">
+                      JUST MEMES <br>
+                      Progetto di tesi | DEMO videogioco
+                    </p>
+                  </div> 
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Just Memes è un videogioco bla bla bla blabla ao;ejf;ao jfwaof. OUhawoiudh ahdiahd slidfj sefk aks iaw e! alsfdj. 
+                        </p>
+                        <a href="">
+                            Vai al progetto
+                            <img src="./imgs/Vector.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <p class="description">
+                      JUST MEMES <br>
+                      Progetto di tesi | DEMO videogioco
+                    </p>
+                  </div> 
+                  <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        
+                      </div>
+                      <div class="flip-card-back">
+                        <p>Just Memes è un videogioco bla bla bla blabla ao;ejf;ao jfwaof. OUhawoiudh ahdiahd slidfj sefk aks iaw e! alsfdj. 
+                        </p>
+                        <a href="">
+                            Vai al progetto
+                            <img src="./imgs/Vector.svg" alt="">
+                        </a>
+                      </div>
+                    </div>
+                    <p class="description">
+                      JUST MEMES <br>
+                      Progetto di tesi | DEMO videogioco
+                    </p>
+                  </div> 
                    
                 </div>
             </div>
         </div>
-        <div class="game">
-            <div class="board" onmouseover="gameOn()" onmouseout="gameOff()">
-                <div class="player"></div>
-                <div class="block"></div>
-                <i>[Click to jump, mouse exit to pause]</i>
-            </div>
-        </div>
+      
         </main>
         <footer>
             <h2>Contatti</h2>

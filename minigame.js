@@ -3,15 +3,17 @@ const block = document.querySelector('.block');
 const board = document.querySelector('.board');
 const progettiText = document.querySelector('#playGame');
 const score = document.querySelector('#score');
+const rat = document.querySelector('#rat');
 
 board.addEventListener('click', jump);
 
 function jump(){
     if(player.classList != 'jump'){
     player.classList.add('jump');
-
+        rat.src = './imgs/0000.png';
     setTimeout(function(){
         player.classList.remove('jump');
+        rat.src = './imgs/ratrun.gif';
     }, 600)
     }
 }
