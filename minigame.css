@@ -7,27 +7,9 @@
     margin: 10px auto;
 }
 
-@media (max-width: 900px){
-    .game{
-        flex-direction: column;
-        margin-top: 80px;
-    }
-}
-
 .board{
     height: 100px;
     width: 100%;
-}
-
-.board i{
-    font-size: 30px;
-    font-weight: bolder;
-    color: #252525;
-    display: block;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: auto;
 }
 
 .player{
@@ -46,11 +28,15 @@
 
 .block{
     width: 30px;
-    height: 40px;
+    height: 30px;
     position: relative;
-    background: url('./imgs/html.svg');
     left: 80%;
     top: 30px;
+}
+
+#skills{
+    height: 100%;
+    object-position: bottom;
 }
 
 .block-move{

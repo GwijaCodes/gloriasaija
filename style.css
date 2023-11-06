@@ -183,6 +183,7 @@ h1{
 
 .about-me-container{
     max-width: 70vw;
+    padding-top: 120px;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -190,13 +191,9 @@ h1{
 }
 
 .dance{
-    height: 180px;
-    width: 100%;
-    margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
 }
 
 .dance img{
@@ -291,10 +288,10 @@ button{
     }
     
     .flip-card:nth-child(1) .flip-card-front{
-      background-image: url('./imgs/splash0001.png');
+      background-image: url('./imgs/spazza.jpg');
     }
     .flip-card:nth-child(2) .flip-card-front{
-        background-image: url('./imgs/spazza.jpg');
+        background-image: url('./imgs/splash0001.png');
     }
     .flip-card:nth-child(3) .flip-card-front{
         background-image: url('./imgs/splash0001.png');
@@ -318,8 +315,9 @@ button{
 
   .description{
     color: var(--chiaro);
-    margin-top: 16px;
+    margin-top: 10px;
     text-align: justify;
+    font-size: 12px;
   }
 
 
@@ -363,6 +361,10 @@ footer .icons{
 
     .greet{
         margin: auto;
+    }
+
+    .about-me{
+        height: fit-content;
     }
 
     .about-me-container{
