@@ -106,6 +106,7 @@ nav h3{
 
 h1, h2{
     font-family: 'Bebas';
+    word-spacing: 6px;
     color: var(--giallo);
 }
 
@@ -278,7 +279,7 @@ button{
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
   
@@ -313,13 +314,16 @@ button{
     color: var(--giallo);
   }
 
+  .flip-card-back p{
+    text-align: start;
+  }
+
   .description{
     color: var(--chiaro);
     margin-top: 10px;
-    text-align: justify;
     font-size: 12px;
+    line-height: 20px;
   }
-
 
 footer{
     height: 50vh;
