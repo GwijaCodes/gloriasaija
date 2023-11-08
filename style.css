@@ -245,7 +245,7 @@ button{
 .projects h2{
     font-size: 32px;
     cursor: pointer;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     text-align: center;
 }
 
@@ -255,7 +255,7 @@ button{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    column-gap: 16px;
     row-gap: 80px;
 }
 
@@ -295,10 +295,10 @@ button{
       background-image: url('./imgs/spazza.jpg');
     }
     .flip-card:nth-child(2) .flip-card-front{
-        background-image: url('./imgs/splash0001.png');
+        background-image: url('./imgs/justmemes.jpg');
     }
     .flip-card:nth-child(3) .flip-card-front{
-        background-image: url('./imgs/splash0001.png');
+        background: var(--giallo);
     }
   
   .flip-card-back {
@@ -338,11 +338,12 @@ footer{
     justify-content: center;
     text-align: center;
     gap: 20px;
-    font-weight: bold;
 }
 
 footer p{
     font-weight: 100;
+    font-size: 14px;
+    line-height: 26px;
 }
 
 footer .icons{
