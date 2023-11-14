@@ -298,7 +298,7 @@ button{
         background-image: url('./imgs/justmemes.jpg');
     }
     .flip-card:nth-child(3) .flip-card-front{
-        background: var(--giallo);
+        background-image: url('./imgs/thatratgame.jpg');
     }
   
   .flip-card-back {
