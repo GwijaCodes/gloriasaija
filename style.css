@@ -292,7 +292,7 @@ button{
     }
     
     .flip-card:nth-child(1) .flip-card-front{
-      background-image: url('./imgs/spazza.jpg');
+      background-image: url('./imgs/spazza-ad.png');
     }
     .flip-card:nth-child(2) .flip-card-front{
         background-image: url('./imgs/justmemes.jpg');
