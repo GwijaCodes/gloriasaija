@@ -157,10 +157,15 @@ h1{
     border-radius: 4px;
     background: linear-gradient(#00000056, #00000061),
     url("./imgs/IMG_5585.jpg");
-    filter:grayscale(100) ;
+    filter: blur(0);
     background-size: cover;
     background-position: center;
     z-index: -1;
+    animation: blur-loading 3s;
+}
+
+@keyframes blur-loading{
+    from {filter: blur(10px)}
 }
 
 .greet{
